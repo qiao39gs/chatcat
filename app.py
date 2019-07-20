@@ -56,7 +56,7 @@ def getRigistRequest():
 	sql = "select * from c_user where user_name='"+request.form.get('user')+"'"
 	results = select(sql)
 	if len(results)==1:
-		return """<script>alert("该用户名已被注册！！！")</script>"""
+		return """<script>alert("该用户名已被注册！")</script>"""
 	else:
 		sql = "INSERT INTO c_user(user_name, passcode) VALUES ('"+request.form.get('user')+"', '"+request.form.get('password')+"')"
 		insert(sql)
