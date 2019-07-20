@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>聊天</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+	<div id="index">
+		<div id="top">
+			欢迎{{ names }}！
+		</div>
+		<div id="friends">
+		</div>
+		<div id="content">
+			<ul>
+				{% for blog in blogs %}
+				<li>{{ blog[3] }} - {{ blog[1] }}</li>
+				{% endfor %}
+    		</ul>
+		</div>
+		<div id="input">
+			<form method="post" action="/submit">
+				<input type="input" name="input" size="30" id="textarea">
+				<input type="submit" value="发送" id="submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

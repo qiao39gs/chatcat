@@ -1,0 +1,66 @@
+#index{
+	background-color: #CCCCCC;
+	height: 600px;
+	width: 800px;
+	position: relative;
+}
+#top{
+	background-color: #CCCCFD;
+	height: 30px;
+	width: 600px;
+	left: 200px;
+	text-align: center;
+	position: absolute;
+}
+#friends{
+	background-color: yellow;
+	height:600px;
+	width: 200px;
+	position: absolute;
+}
+#input{
+	background-color: yellow;
+	height: 40px;
+	width: 600px;
+	margin-top: 560px;
+	left: 200px;
+	position: absolute;
+}
+#textarea{
+	width: 550px;
+	height: 34px;
+	position: absolute;
+}
+#submit{
+	width: 46px;
+	height: 40px;
+	right: 0px;
+	position: absolute;
+}
+#content{
+	overflow-x:hidden;
+	overflow-y:auto;
+	width: 600px;
+	height: 530px;
+	right: 0px;
+	top:30px;
+	position: absolute;
+}
+#content ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#content li{
+    padding: 12px 24px;
+    border-bottom: 1px solid #ddd;
+}
+
+#content li:last-child {
+    border-bottom:none;
+}
+
+.showblog li:hover {
+    background-color: #f8f9fa;
+}
